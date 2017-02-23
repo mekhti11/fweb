@@ -12,3 +12,11 @@ h1 {
 .form {
   font-family: monospace;
 }
+
+.chloe-article{
+  font-size: 125%;
+}
+
+img{
+  border: 1px solid black;
+}
