@@ -1,3 +1,7 @@
+/*this is a comment line
+* another line
+*/
+
 html,body {
   background-color: #3B444B;
 }
@@ -5,8 +9,11 @@ h1 {
   font-family: Arial;
   font-style: oblique;
 }
-#header {
-  background-color: red;
+
+#main-page-nav{
+  font-size: 150%;
+  font-family: sans-serif;
+  font-style: oblique;
 }
 
 .form {
@@ -15,8 +22,21 @@ h1 {
 
 .chloe-article{
   font-size: 125%;
+  text-align: center;
 }
 
 img{
   border: 1px solid black;
+}
+
+a:link,a:visited{
+  color: blue;
+}
+
+a:hover{
+  color: black;
+}
+
+a:active{
+  color: red;
 }
