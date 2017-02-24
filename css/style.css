@@ -1,28 +1,41 @@
 /*this is a comment line
 * another line
 */
+@import url('https://fonts.googleapis.com/css?family=Sansita:400i');
+@import url('https://fonts.googleapis.com/css?family=VT323');
 
+header,form{
+  background-color: aqua;
+}
 html,body {
   background-color: #3B444B;
 }
 h1 {
-  font-family: Arial;
+  font-family: 'VT323', monospace;
   font-style: oblique;
+  text-align: center;
 }
-
+figcaption{
+  font: bold 16px Georgia;
+  text-align: center;
+  color: blue;
+}
 #main-page-nav{
-  font-size: 150%;
+  font-size: 18px;
   font-family: sans-serif;
   font-style: oblique;
 }
 
 .form {
-  font-family: monospace;
+  font-family:Georgia , monospace;
 }
 
 .chloe-article{
-  font-size: 125%;
+  color: white;
+  font-size: 20px;
   text-align: center;
+  text-shadow: 3px 3px 10px black;
+  font-family: 'Sansita';
 }
 
 img{
