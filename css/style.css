@@ -5,13 +5,13 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
 header,form{
-  background-color: aqua;
+  background-color:azure;
 }
 html,body {
-  background-color: #3B444B;
+  background-color: yellow; /*#3B444B;*/
 }
 h1 {
-  font-family: 'VT323', monospace;
+  font-family: 'Sansita', monospace;
   font-style: oblique;
   text-align: center;
 }
@@ -31,25 +31,37 @@ figcaption{
 }
 
 .chloe-article{
-  color: white;
+  color: black;
   font-size: 20px;
   text-align: center;
-  text-shadow: 3px 3px 10px black;
   font-family: 'Sansita';
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 40px
 }
 
+#social-ul{
+  color: white;
+  font-size: 16px;
+}
+
+#article{
+  padding: 20px;
+  background: rgba(255,255,255,.85);
+}
 img{
   border: 1px solid black;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
-a:link,a:visited{
+a:link{
   color: blue;
 }
-
-a:hover{
-  color: black;
+a:visited{
+  color: purple ;
 }
-
 a:active{
   color: red;
 }
