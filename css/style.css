@@ -9,6 +9,7 @@ header,form{
 }
 html,body {
   background-color: white; /*#3B444B;*/
+  margin: 0 auto;
 }
 h1 {
   font-family: 'Sansita', monospace;
@@ -51,7 +52,7 @@ figcaption{
   float: left;
 }
 #button-box:hover{
-  box-shadow:0 16px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
 #social-ul{
