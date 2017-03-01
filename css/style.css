@@ -10,6 +10,7 @@ header,form{
 html,body {
   background-color: white; /*#3B444B;*/
   margin: 0 auto;
+  margin: 0 auto;
 }
 h1 {
   font-family: 'Sansita', monospace;
@@ -42,8 +43,8 @@ figcaption{
   padding-bottom: 40px
 }
 #button-box{
-  color: white;
-  background-color: red;
+  color: rgba(255, 255, 255,0.9);
+  background-color: rgba(230, 44, 44, 1);
   width: 110px;
   height: 20px;
   border: 1px none black;
@@ -52,7 +53,9 @@ figcaption{
   float: left;
 }
 #button-box:hover{
-  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.25),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: rgba(255, 44, 44, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 #social-ul{
