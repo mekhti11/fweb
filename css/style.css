@@ -1,7 +1,9 @@
 /*this is a comment line
 * another line
 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Sansita:400i');
+@import url('https://fonts.googleapis.com/css?family=Amiko');
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
 header,form{
@@ -9,7 +11,6 @@ header,form{
 }
 html,body {
   background-color: white; /*#3B444B;*/
-  margin: 0 auto;
   margin: 0 auto;
 }
 h1 {
@@ -36,8 +37,7 @@ figcaption{
 .chloe-article{
   color: black;
   font-size: 20px;
-  text-align: center;
-  font-family: 'Sansita';
+  font-family: 'Montserrat';
   margin: 0 auto;
   width: 60%;
   padding-bottom: 40px
@@ -52,6 +52,30 @@ figcaption{
   padding: 10px;
   float: left;
 }
+#next-button{
+  float: right;
+  color: rgba(255, 255, 255,0.9);
+  background-color: rgba(0, 235, 0, 0.9);
+  width: 110px;
+  height: 20px;
+  border: 1px none black;
+  margin: 10px;
+  padding: 10px;
+}
+#previous-button{
+  float: left;
+  color: rgba(255, 255, 255,0.9);
+  background-color: rgba(0, 235, 0, 0.9);
+  width: 110px;
+  height: 20px;
+  border: 1px none black;
+  margin: 10px;
+  padding: 10px;
+}
+#previous-button:hover,#next-button:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.25),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 #button-box:hover{
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.25),0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: rgba(255, 44, 44, 1);
@@ -62,16 +86,30 @@ figcaption{
   color: white;
   font-size: 16px;
 }
+#chloe2,#chloe5{
+  display: block;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+#chloe4{
+  display: block;
+  float: right;
+  margin: 0 20px 10px 0;
+}
 
 #article{
-  padding: 20px;
+  padding: 10px;
   background: rgba(255,255,255,.85);
+}
+#chloe-main{
+  width: auto;
+  height: auto;
 }
 img{
   border: 1px solid black;
   max-width: 100%;
-  width: 100%;
-  height: auto;
+  width: 40%;
+  height: 30%;
 }
 
 a:link{
