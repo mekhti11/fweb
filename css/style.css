@@ -4,24 +4,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Sansita:400i');
 @import url('https://fonts.googleapis.com/css?family=Amiko');
-@import url('https://fonts.googleapis.com/css?family=VT323');
+import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
-header,form{
-  background-color:azure;
-}
 html,body {
   background-color: white; /*#3B444B;*/
   margin: 0 auto;
 }
+body{
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 h1 {
-  font-family: 'Sansita', monospace;
   font-style: oblique;
   text-align: center;
 }
+
+h1,h2{
+  font-family:'Architects Daughter',cursive;
+  color: 	rgba(0, 187, 1, 1);
+}
+
 figcaption{
   font: bold 16px Georgia;
   text-align: center;
-  color: blue;
+  color: 	rgba(0, 187, 1, 1);
 }
 #main-page-nav{
   font-size: 18px;
@@ -44,18 +50,18 @@ figcaption{
 }
 #button-box{
   color: rgba(255, 255, 255,0.9);
-  background-color: rgba(230, 44, 44, 1);
+  background-color: rgba(0, 187, 1, 1);
   width: 110px;
   height: 20px;
   border: 1px none black;
   margin: 10px;
   padding: 10px;
-  float: left;
+  display: inline-table;
 }
 #next-button{
   float: right;
   color: rgba(255, 255, 255,0.9);
-  background-color: rgba(0, 235, 0, 0.9);
+  background-color: rgba(0, 187, 1, 1);
   width: 110px;
   height: 20px;
   border: 1px none black;
@@ -65,7 +71,7 @@ figcaption{
 #previous-button{
   float: left;
   color: rgba(255, 255, 255,0.9);
-  background-color: rgba(0, 235, 0, 0.9);
+  background-color: rgba(0, 187, 1, 1);
   width: 110px;
   height: 20px;
   border: 1px none black;
@@ -99,7 +105,6 @@ figcaption{
 
 #article{
   padding: 10px;
-  background: rgba(255,255,255,.85);
 }
 #chloe-main{
   width: auto;
@@ -120,4 +125,13 @@ a:visited{
 }
 a:active,a:hover{
   color: red;
+}
+
+
+.shadow{
+  box-shadow: 0 3px 10px #333;
+}
+
+#article-parts{
+  margin-top: 5px;
 }
