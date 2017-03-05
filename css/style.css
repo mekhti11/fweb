@@ -9,12 +9,14 @@ import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 html,body {
   background-color: white; /*#3B444B;*/
   margin: 0 auto;
+  height: auto;
 }
 body{
   background: url(../images/white-wood.jpg) no-repeat center top;
   background-size: cover;
 }
 h1 {
+  font-size: 50px;
   font-style: oblique;
   text-align: center;
 }
@@ -111,7 +113,6 @@ figcaption{
   height: auto;
 }
 img{
-  border: 1px solid black;
   max-width: 100%;
   width: 40%;
   height: 30%;
@@ -127,11 +128,18 @@ a:active,a:hover{
   color: red;
 }
 
-
 .shadow{
   box-shadow: 0 3px 10px #333;
+  border: 1px solid rgba(0, 187, 1, 1);
 }
 
 #article-parts{
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+@media only screen and [max-width:400px] {
+  p{
+    font-size: 130%;
+  }
+  
 }
