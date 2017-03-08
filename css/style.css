@@ -11,9 +11,9 @@ html,body {
   margin: 0 auto;
   height: auto;
 }
-body{
-  background: url(../images/white-wood.jpg) no-repeat center top;
-  background-size: cover;
+footer{
+  position: absolute;
+  top: 750px;
 }
 h1 {
   font-size: 50px;
@@ -132,7 +132,14 @@ a:active,a:hover{
   box-shadow: 0 3px 10px #333;
   border: 1px solid rgba(0, 187, 1, 1);
 }
-
+.chloe{
+  background: url(../images/chloe-bennet.jpg) no-repeat center top;
+  background-size: cover;
+}
+.white-wood{
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
 #article-parts{
   margin-top: 10px;
 }
@@ -141,5 +148,5 @@ a:active,a:hover{
   p{
     font-size: 130%;
   }
-  
+
 }
