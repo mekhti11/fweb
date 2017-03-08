@@ -19,3 +19,4 @@ if ((5===5) && (5 < 6)) {
 sayHello();
 doSomething("own shit");
 sayingHello('R2-D2');
+//send();  alert gives an error when try to compile/run on node
