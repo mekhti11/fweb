@@ -44,4 +44,4 @@ sayingHello('R2-D2');
 console.log(square(12));
 console.log(Square(12));
 //send();  alert gives an error when try to compile/run on node
-document.write("Anakin Skywalker aka Darth Vader");
+console.log("Anakin Skywalker aka Darth Vader");
