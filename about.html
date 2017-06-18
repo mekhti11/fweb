@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html >
 
 <head>
   <meta charset="utf-8">
@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/angular-route.min.js"></script>
   <title>ABOUT</title>
 </head>
 
@@ -30,18 +32,34 @@
   </nav>
 
   <br><br><br><br>
-  
-  <div ng-app="">
+
+  <div ng-app = "languageApp" ng-controller = "languages">
     <input type="text" ng-model="name">
     <div> Hello {{name}}</div>
-    <div data-ng-bind="name"></div>
-    <div ng-init="myFavLan = [{name :'Java' , extension :'.java'},
-      {name:'JavaScript' , extension :'.js'},{name : 'C',extension:'.c'}]">
+    <button ng-click="showName()">Show Name</button>
+    <div ng-show="durum" ng-bind="name"></div>
+    <div >
+      <div ng-repeat="lan in myFavLans">
+        <br> Name      : {{lan.name}} <br>
+        Extension : {{lan.extension}} <br>
       </div>
-    <div ng-repeat="lan in myFavLan">
-      <br> Name      : {{lan.name}} <br>
-      Extension : {{lan.extension}} <br>
-     </div>
+    </div>
+    <br><br>
+    <div >
+        Select ur fav Language
+        <button ng-click ="java()">Java</button>
+        <button ng-click ="js()">JS</button>
+        <button ng-click ="c()">C</button> <br>
+        Ur fav Language is {{myFavLan}}
+        <h5>{{clock}}</h5>
+    </div>
+    <div ng-controller = "mycontrol">
+      <ul>
+        <li ng-repeat = "veri in veriler">{{veri}}</li>
+      </ul>
+    </div>
+
+
   </div>
 </body>
 
