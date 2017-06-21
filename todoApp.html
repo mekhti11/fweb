@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO APP</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="js/todoAppController.js"></script>
+  </head>
+  <body >
+    <div ng-app = "todoApp" ng-controller = "mycontrol">
+      <h1 class="header">
+        {{todo.user}}'s TODO List
+        <span class="label label-default" ng-hide="inCompletedCount() ==0" ng-class="warningLevel()">
+          {{inCompletedCount()}}
+        </span>
+      </h1>
+      <div class="input group">
+        <input ng-model = "newItem" class="form-control">
+        <button type="button" ng-click = "addButtonHandler(newItem)" class="btn btn-default">Add</button>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Done</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat = "item in todo.items" | filter:{done: false} | orderBy:'action'>
+            <td>{{item.action}}</td>
+            <td> <input type="checkbox" ng-model="item.done" /> </td>
+            <!--<td>{{item.done}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+      <div >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,16 @@
 var application = angular.module('languageApp',[]);
 
-application.controller("mycontrol",function($scope,$http) {
-  $http.get("").then(function (data) {
-    $scope.veriler = data.data;
-  })
+application.controller("mycontrol",function($scope) {
+  $scope.todo = {
+    user : "Mekhti",
+    items :[
+      {action : "Wake up" , done : true},
+      {action : "Get Dressed" , done : true},
+      {action : "Go toilet" , done : true},
+      {action : "Have shower" , done : true},
+      {action : "Have Breakfast", done:false}
+    ]
+  };
 });
 
 application.controller('languages',function ($scope) {
