@@ -1,0 +1,7 @@
+[
+  {"action" : "Wake up" , "done" : true},
+  {"action" : "Get Dressed" , "done" : false},
+  {"action" : "Go toilet" , "done" : true},
+  {"action" : "Have shower" , "done" : true},
+  {"action" : "Have Breakfast", "done":false}
+]

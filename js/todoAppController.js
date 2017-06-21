@@ -1,7 +1,15 @@
 var app = angular.module('todoApp',[]);
 
-app.controller("mycontrol",function($scope) {
-  $scope.todo = {
+app.controller("mycontrol",function($scope , $http) {
+  $scope.todo ={
+    user : "Mekhti"
+  };
+  var promise = $http.get("json/todo.json");
+  promise.then(function(response){
+    $scope.todo.items = response.data ;
+  });
+
+  /**$scope.todo = {
     user : "Mekhti",
     items :[
       {action : "Wake up" , done : true},
@@ -10,7 +18,7 @@ app.controller("mycontrol",function($scope) {
       {action : "Have shower" , done : true},
       {action : "Have Breakfast", done:false}
     ]
-  };
+  };*/
 
   $scope.inCompletedCount = function (){
     var count =0;
@@ -33,5 +41,17 @@ app.controller("mycontrol",function($scope) {
       return "label-success";
     else
       return "label-warning";
+  }
+});
+
+app.filter("checkedItems", function () {
+  return function (items, showComplete) {
+    var resultArr = [];
+    angular.forEach(items, function (item) {
+      if (item.done == false || showComplete == true) {
+        resultArr.push(item);
+      }
+    });
+    return resultArr;
   }
 });
